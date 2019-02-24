@@ -12,11 +12,11 @@ import cucumber.api.junit.Cucumber;
 
 @CucumberOptions(features = { "Feature" }, 
 glue = {"stepDefinition" }, 
-plugin = { "json:cucumber.json",
-			"html:cucumber-html-report", 
-			"pretty:cucumber-pretty.txt",
-			"usage:cucumber-usage.json", 
-			"junit:cucumber-junit-results.xml"
+plugin = { "json:target/cucumber.json",
+			"html:target/cucumber-html-report", 
+			"pretty:target/cucumber-pretty.txt",
+			"usage:target/cucumber-usage.json", 
+			"junit:target/cucumber-junit-results.xml"
 		}
 	)
 
