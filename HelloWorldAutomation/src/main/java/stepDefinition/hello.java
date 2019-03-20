@@ -16,6 +16,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import cucumberTest.automationTest;
 
 public class hello {
 	WebDriver driver ;
@@ -25,27 +26,7 @@ public class hello {
 	@Given("^User is on Home Page \"([^\"]*)\" on browser \"([^\"]*)\"$")
 	public void user_is_on_Home_Page(String url, String browser) throws Throwable {
 
-		DesiredCapabilities caps =  new DesiredCapabilities();
-		caps.setCapability("networkConnectionEnabled", true);
-        caps.setCapability("browserConnectionEnabled", true);
-
-		if("chrome".equalsIgnoreCase(browser)) {
-			ChromeOptions chromeOptions = new ChromeOptions();
-			chromeOptions.addArguments("disable-infobars");
-			chromeOptions.addArguments("disable-extensions");
-			caps.merge(chromeOptions);
-			driver = new ChromeDriver(caps);
-					
-		}else if("firefox".equalsIgnoreCase(browser)) {
-			caps.setCapability("marionette", true);
-			FirefoxOptions ffOptions = new FirefoxOptions();
-			caps.merge(ffOptions);
-			driver = new FirefoxDriver(caps);
-		}else if("edge".equalsIgnoreCase(browser)) {
-			driver = new EdgeDriver(caps);
-		}else {
-			driver = new InternetExplorerDriver(caps);
-		}
+		driver = automationTest.getDriver();
 		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(url);

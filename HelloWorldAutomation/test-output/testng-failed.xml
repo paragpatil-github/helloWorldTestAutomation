@@ -11,6 +11,8 @@
       <class name="cucumberTest.automationTest">
         <methods>
           <include name="setUpClass"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
           <include name="feature" invocation-numbers="0"/>
           <include name="tearDownClass"/>
         </methods>

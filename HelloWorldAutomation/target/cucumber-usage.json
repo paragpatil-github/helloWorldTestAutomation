@@ -5,12 +5,12 @@
       {
         "name": "User is on Home Page \"http://localhost:8080/helloWorld/index.html\" on browser \"chrome\"",
         "aggregatedDurations": {
-          "average": 37.673670974,
-          "median": 37.673670974
+          "average": 21.547334564,
+          "median": 21.547334564
         },
         "durations": [
           {
-            "duration": 37.673670974,
+            "duration": 21.547334564,
             "location": "helloWorld.feature:4"
           }
         ]
