@@ -2,12 +2,16 @@ package cucumberTest;
 
 import java.util.concurrent.TimeUnit;
 
-import org.junit.runner.RunWith;
+//import org.junit.runner.RunWith;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
+import cucumber.api.testng.AbstractTestNGCucumberTests;
+
+import org.testng.Assert;
+import org.testng.annotations.*;
 
 
 @CucumberOptions(features = { "src/test/resources/features" }, 
@@ -21,7 +25,7 @@ plugin = { "json:target/cucumber.json",
 	)
 
 
-@RunWith(Cucumber.class)
-public class SeleniumTest {
+//@RunWith(Cucumber.class)
+public class automationTest extends AbstractTestNGCucumberTests{
 	
 }

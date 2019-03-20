@@ -1,0 +1,20 @@
+[
+  {
+    "source": "^User is on Home Page \"([^\"]*)\" on browser \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "User is on Home Page \"http://localhost:8080/helloWorld/index.html\" on browser \"chrome\"",
+        "aggregatedDurations": {
+          "average": 39.534249846,
+          "median": 39.534249846
+        },
+        "durations": [
+          {
+            "duration": 39.534249846,
+            "location": "helloWorld.feature:4"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -192,7 +192,6 @@
 			<scope>system</scope>
 			<systemPath>${basedir}/lib/testng-6.9.10.jar</systemPath>
 		</dependency>
-
 		
 	</dependencies>
 </project>

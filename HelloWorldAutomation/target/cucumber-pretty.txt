@@ -1,0 +1,38 @@
+Feature: Login Action
+
+  Scenario: Successful Login with Valid Credentials                                              [90m# helloWorld.feature:3[0m
+    [32mGiven [0m[32mUser is on Home Page "[0m[32m[1mhttp://localhost:8080/helloWorld/index.html[0m[32m" on browser "[0m[32m[1mchrome[0m[32m"[0m [90m# hello.user_is_on_Home_Page(String,String)[0m
+    [31mWhen [0m[31mUser Enters Username as "[0m[31m[1mJohn Doe[0m[31m"[0m                                                      [90m# hello.user_Enters_Username_as(String)[0m
+      [31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"username"}
+        (Session info: chrome=72.0.3626.121)
+        (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+      Command duration or timeout: 0 milliseconds
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+      System info: host: 'CAFSDH047534680', ip: '53.203.74.22', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\gsreeni\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60155}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.121, webStorageEnabled: true}
+      Session ID: 015119f4997fd9bf01a03ef81b3e0327
+      *** Element info: {Using=id, value=username}
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+      	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+      	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+      	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+      	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+      	at org.openqa.selenium.By$ById.findElement(By.java:188)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+      	at stepDefinition.hello.user_Enters_Username_as(hello.java:57)
+      	at ✽.When User Enters Username as "John Doe"(helloWorld.feature:5)
+      [0m
+    [36mAnd [0m[36mUser clicks on "[0m[36m[1mSubmit[0m[36m" button[0m                                                           [90m# hello.user_clicks_on_button(String)[0m
+    [36mThen [0m[36mMessage displayed "[0m[36m[1mHello John Doe[0m[36m"[0m                                                      [90m# hello.message_displayed(String)[0m
+    [36mThen [0m[36mclose browser[0m                                                                           [90m# hello.close_browser()[0m
