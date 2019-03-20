@@ -193,5 +193,13 @@
 			<systemPath>${basedir}/lib/testng-6.9.10.jar</systemPath>
 		</dependency>
 		
+		<dependency>
+			<groupId>com.gsd.sreenidhi</groupId>
+			<artifactId>okhttp</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/lib/jcommander-1.72.jar</systemPath>
+		</dependency>
+		
 	</dependencies>
 </project>

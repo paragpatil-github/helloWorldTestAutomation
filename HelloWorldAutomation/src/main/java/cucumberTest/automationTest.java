@@ -25,7 +25,7 @@ plugin = { "json:target/cucumber.json",
 	)
 
 
-//@RunWith(Cucumber.class)
+//@RunWith(Cucumber.class) -- JUnit
 public class automationTest extends AbstractTestNGCucumberTests{
 	
 }
